@@ -86,6 +86,7 @@ func main() {
 		}
 
 		creds, err = assumeRole(roleConfig.Role, roleConfig.MFA, *duration)
+		must(err)
 	} else {
 		creds, err = assumeProfile(role)
 	}
