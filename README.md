@@ -5,13 +5,13 @@ This tool will request and set temporary credentials in your shell environment v
 On OS X, the best way to get it is to use homebrew:
 
 ```bash
-brew install remind101/formulae/assume-role
+brew install arxdsilva/formulae/assume-role
 ```
 
 If you have a working Go 1.6/1.7 environment:
 
 ```bash
-$ go get -u github.com/remind101/assume-role
+$ go get -u github.com/arxdsilva/assume-role
 ```
 
 On Windows with PowerShell, you can use [scoop.sh](http://scoop.sh/)

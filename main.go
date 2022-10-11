@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"os/exec"
 	"regexp"
@@ -235,7 +234,7 @@ func readTokenCode() (string, error) {
 
 // loadConfig loads the ~/.aws/roles file.
 func loadConfig() (config, error) {
-	raw, err := ioutil.ReadFile(configFilePath)
+	raw, err := os.ReadFile(configFilePath)
 	if err != nil {
 		return nil, err
 	}
